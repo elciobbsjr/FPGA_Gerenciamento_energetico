@@ -3,7 +3,6 @@
 #include "FreeRTOS.h"
 #include "task.h"
 
-// ==== Headers das suas tarefas ====
 #include "tarefa_joystick.h"
 #include "tarefa_freio.h"
 #include "battery_task.h"
