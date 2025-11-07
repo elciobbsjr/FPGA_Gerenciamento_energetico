@@ -1,0 +1,2 @@
+@W: CS133 :"C:\Users\ResTIC16\Desktop\possivelproojeto\Arquivos\Gereciamento_energetico.sv":1:13:1:22|Ignoring property top_module
+

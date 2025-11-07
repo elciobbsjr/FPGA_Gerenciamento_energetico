@@ -1,0 +1,93 @@
+# =========================================================
+# ARQUIVO DE CONSTRAINTS - energy_manager_fixed_bitdoglab.lpf
+# =========================================================
+# Projeto: Energy Management System (ECP5 BitDogLab)
+# FPGA: Lattice ECP5 LFE5U-45F
+# MCU: Raspberry Pi Pico (BitDogLab A)
+# =========================================================
+# Todos os sinais operam em 3.3V (LVCMOS33) - compatíveis Pico/FPGA
+# =========================================================
+
+# =========================================================
+# CLOCK
+# ---------------------------------------------------------
+# Clock de 25 MHz da placa BitDogLab A
+# =========================================================
+LOCATE    COMP "clk" SITE "P3";
+IOBUF     PORT "clk" IO_TYPE=LVCMOS33;
+FREQUENCY PORT "clk" 25 MHz;
+
+# =========================================================
+# RESET
+# ---------------------------------------------------------
+# Reset geral do sistema (ativo em nível baixo)
+# Pode ser ligado a um botão de reset físico na placa FPGA.
+# =========================================================
+LOCATE    COMP "reset_n" SITE "B19"; 
+IOBUF     PORT "reset_n" IO_TYPE=LVCMOS33 PULLMODE=UP;
+
+# =========================================================
+# ENTRADAS (sinais enviados pelo Raspberry Pi Pico → FPGA)
+# =========================================================
+# Todos os sinais abaixo vêm do Pico (BitDogLab B) via flat cable CN2.
+# Direção: Pico -> FPGA
+# ---------------------------------------------------------
+# | Função lógica | FPGA pino | Pico GPIO | Descrição física BitDogLab B |
+# ---------------------------------------------------------
+# | p_demand_low  | A18 | GP18 | Demanda baixa (aceleração leve - joystick) |
+# | p_demand_high | C1  | GP19 | Demanda alta (potência máxima - joystick)  |
+# | p_idle        | B1  | GP20 | Joystick neutro (sem aceleração)          |
+# | is_braking    | D2  | GP8  | Sinal de freio (botão A do Pico)          |
+# | battery_button| K3  | GP9  | Botão de bateria (botão B do Pico)        |
+# ---------------------------------------------------------
+
+LOCATE COMP "p_demand_low"  SITE "A18"; IOBUF PORT "p_demand_low"  IO_TYPE=LVCMOS33 PULLMODE=DOWN;
+LOCATE COMP "p_demand_high" SITE "C1";  IOBUF PORT "p_demand_high" IO_TYPE=LVCMOS33 PULLMODE=DOWN;
+LOCATE COMP "p_idle"        SITE "B1";  IOBUF PORT "p_idle"        IO_TYPE=LVCMOS33 PULLMODE=DOWN;
+LOCATE COMP "is_braking"    SITE "D2";  IOBUF PORT "is_braking"    IO_TYPE=LVCMOS33 PULLMODE=DOWN;
+LOCATE COMP "battery_button" SITE "K3"; IOBUF PORT "battery_button" IO_TYPE=LVCMOS33 PULLMODE=UP;
+
+# =========================================================
+# SAÍDAS (sinais gerados pelo FPGA → lidos pelo Pico)
+# =========================================================
+# Direção: FPGA -> Pico
+# Os sinais abaixo são monitorados na tarefa "fpga_monitor"
+# e refletem o modo operacional do sistema (3 bits).
+# ---------------------------------------------------------
+# | FPGA sinal       | FPGA pino | Pico GPIO | Descrição física BitDogLab B |
+# ---------------------------------------------------------
+# | operating_mode0  | G20 | GP28 | Bit 0 (LED vermelho) |
+# | operating_mode1  | L18 | GP16 | Bit 1 (LED verde)    |
+# | operating_mode2  | L20 | GP17 | Bit 2 (LED azul)     |
+# ---------------------------------------------------------
+
+LOCATE COMP "operating_mode0" SITE "G20"; 
+IOBUF  PORT "operating_mode0" IO_TYPE=LVCMOS33 DRIVE=8 SLEWRATE=SLOW;
+
+LOCATE COMP "operating_mode1" SITE "L18"; 
+IOBUF  PORT "operating_mode1" IO_TYPE=LVCMOS33 DRIVE=8 SLEWRATE=SLOW;
+
+LOCATE COMP "operating_mode2" SITE "L20"; 
+IOBUF  PORT "operating_mode2" IO_TYPE=LVCMOS33 DRIVE=8 SLEWRATE=SLOW;
+
+# =========================================================
+# RESUMO DE PINOS
+# ---------------------------------------------------------
+# Pico → FPGA (entradas do FPGA)
+#   GP18 → A18 : p_demand_low
+#   GP19 → D1  : p_demand_high   (pino corrigido)
+#   GP20 → B1  : p_idle
+#   GP8  → D2  : is_braking
+#   GP9  → K3  : battery_button
+#
+# FPGA → Pico (saídas do FPGA)
+#   G20 → GP28 : operating_mode0 (R)
+#   L18 → GP16 : operating_mode1 (G)
+#   L20 → GP17 : operating_mode2 (B)
+#
+# Clock / Reset
+#   P3  : clk (25 MHz)
+#   B19 : reset_n
+# ---------------------------------------------------------
+# Total: 5 entradas funcionais + 3 saídas + clk + reset = 10 pinos
+# =========================================================

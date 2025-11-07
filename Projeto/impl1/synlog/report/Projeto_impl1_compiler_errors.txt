@@ -1,0 +1,2 @@
+@E: CG389 :"C:\Users\ResTIC16\Desktop\possivelproojeto\Arquivos\ComparadorLogicoBlink.sv":47:25:47:32|Reference to undefined module energy_manager_fixed
+

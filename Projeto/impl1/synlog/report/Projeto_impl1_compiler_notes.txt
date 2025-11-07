@@ -1,0 +1,7 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CG364 :"C:\Users\ResTIC16\Desktop\possivelproojeto\Arquivos\Gereciamento_energetico.sv":78:7:78:26|Synthesizing module energy_manager_fixed in library work.
+@N: CG364 :"C:\Users\ResTIC16\Desktop\possivelproojeto\Arquivos\Gereciamento_energetico.sv":19:7:19:30|Synthesizing module energy_system_all_in_one in library work.
+@N: CL201 :"C:\Users\ResTIC16\Desktop\possivelproojeto\Arquivos\Gereciamento_energetico.sv":111:4:111:9|Trying to extract state machine for register current_mode.
+@N|Running in 64-bit mode
+

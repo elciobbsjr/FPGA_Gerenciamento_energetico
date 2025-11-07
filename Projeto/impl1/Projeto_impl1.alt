@@ -1,0 +1,18 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Fri Oct 31 13:59:48 2025 *
+NOTE DESIGN NAME: energy_system_all_in_one *
+NOTE DEVICE NAME: LFE5U-45F-6CABGA381 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS operating_mode0 : G20 : out *
+NOTE PINS clk : P3 : in *
+NOTE PINS operating_mode2 : L20 : out *
+NOTE PINS operating_mode1 : L18 : out *
+NOTE PINS battery_button : K3 : in *
+NOTE PINS is_braking : D2 : in *
+NOTE PINS p_idle : B1 : in *
+NOTE PINS p_demand_high : C1 : in *
+NOTE PINS p_demand_low : A18 : in *
+NOTE PINS reset_n : B19 : in *
+NOTE CONFIGURATION MODE: JTAG *
+NOTE COMPRESSION: off *

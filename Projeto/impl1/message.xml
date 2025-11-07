@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Bitgen">
+        <Message>
+            <ID>1009992</ID>
+            <Severity>Info</Severity>
+            <Dynamic> SW_XO3D_SECURITY_ENCRYPTION *NOT* controlled by sa5p00.acd ###</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009992</ID>
+            <Severity>Info</Severity>
+            <Dynamic> SW_XO3D_SECURITY_ENCRYPTION license_securityIP OK</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Map">
+        <Message>
+            <ID>51001030</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>reset_n_c</Dynamic>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>2030012</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+    <Task name="Translate">
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>REGEN_BRAKING</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>HYBRID_ASSIST</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>DIESEL_CHARGE</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>ELECTRIC</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Synplify_Synthesis">
+        <Message>
+            <ID>2011000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT529 :&quot;c:\users\restic16\desktop\possivelproojeto\arquivos\gereciamento_energetico.sv&quot;:111:4:111:9|Found inferred clock energy_system_all_in_one|clk which controls 5 sequential elements including u_energy.current_mode[4]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Navigation>MT529</Navigation>
+            <Navigation>c:\users\restic16\desktop\possivelproojeto\arquivos\gereciamento_energetico.sv</Navigation>
+            <Navigation>111</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>111</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Found inferred clock energy_system_all_in_one|clk which controls 5 sequential elements including u_energy.current_mode[4]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT420 |Found inferred clock energy_system_all_in_one|clk with period 5.00ns. Please declare a user-defined clock on port clk.</Dynamic>
+            <Navigation>MT420</Navigation>
+            <Navigation>Found inferred clock energy_system_all_in_one|clk with period 5.00ns. Please declare a user-defined clock on port clk.</Navigation>
+        </Message>
+    </Task>
+</BaliMessageLog>

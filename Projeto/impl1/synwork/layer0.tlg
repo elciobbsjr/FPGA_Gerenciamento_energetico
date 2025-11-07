@@ -1,0 +1,25 @@
+Selecting top level module energy_system_all_in_one
+@N: CG364 :"C:\Users\ResTIC16\Desktop\possivelproojeto\Arquivos\Gereciamento_energetico.sv":78:7:78:26|Synthesizing module energy_manager_fixed in library work.
+Running optimization stage 1 on energy_manager_fixed .......
+Finished optimization stage 1 on energy_manager_fixed (CPU Time 0h:00m:00s, Memory Used current: 97MB peak: 98MB)
+@N: CG364 :"C:\Users\ResTIC16\Desktop\possivelproojeto\Arquivos\Gereciamento_energetico.sv":19:7:19:30|Synthesizing module energy_system_all_in_one in library work.
+Running optimization stage 1 on energy_system_all_in_one .......
+Finished optimization stage 1 on energy_system_all_in_one (CPU Time 0h:00m:00s, Memory Used current: 97MB peak: 98MB)
+Running optimization stage 2 on energy_system_all_in_one .......
+Finished optimization stage 2 on energy_system_all_in_one (CPU Time 0h:00m:00s, Memory Used current: 96MB peak: 98MB)
+Running optimization stage 2 on energy_manager_fixed .......
+@N: CL201 :"C:\Users\ResTIC16\Desktop\possivelproojeto\Arquivos\Gereciamento_energetico.sv":111:4:111:9|Trying to extract state machine for register current_mode.
+Extracted state machine for register current_mode
+State machine has 5 reachable states with original encodings of:
+   000
+   001
+   010
+   011
+   100
+Finished optimization stage 2 on energy_manager_fixed (CPU Time 0h:00m:00s, Memory Used current: 97MB peak: 98MB)
+
+For a summary of runtime per design unit, please see file:
+==========================================================
+@L: C:\Users\ResTIC16\Desktop\possivelproojeto\Projeto\impl1\synwork\layer0.duruntime
+
+

@@ -1,0 +1,9 @@
+Runtime Summary:
+================
+
+	The following design units have negligible CPU times:
+	=====================================================
+		* Library: work, DesignUnit: energy_system_all_in_one
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: energy_manager_fixed
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time

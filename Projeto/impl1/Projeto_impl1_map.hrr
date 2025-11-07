@@ -1,0 +1,20 @@
+---------------------------------------------------
+Report for cell energy_system_all_in_one
+   Instance path: energy_system_all_in_one
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      17.00        100.0
+                                  LUT4	      25.00        100.0
+                                 IOBUF	         10        100.0
+                                PFUREG	          5        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                  energy_manager_fixed	          1        100.0
+---------------------------------------------------
+Report for cell energy_manager_fixed
+   Instance path: energy_system_all_in_one/u_energy
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      17.00        100.0
+                                  LUT4	      25.00        100.0
+                                PFUREG	          5        100.0

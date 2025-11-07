@@ -1,0 +1,1 @@
+@W: MT529 :"c:\users\restic16\desktop\possivelproojeto\arquivos\gereciamento_energetico.sv":111:4:111:9|Found inferred clock energy_system_all_in_one|clk which controls 5 sequential elements including u_energy.current_mode[4]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 

@@ -1,0 +1,34 @@
+----------------------------------------------------------------------
+Report for cell energy_system_all_in_one.verilog
+
+Register bits: 5 of 43848 (0%)
+PIC Latch:       0
+I/O cells:       10
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1S3BX        1       100.0
+                            FD1S3DX        4       100.0
+                                GSR        1       100.0
+                                 IB        7       100.0
+                                INV        1       100.0
+                                 OB        3       100.0
+                           ORCALUT4       25       100.0
+                                PUR        1       100.0
+                                VHI        2       100.0
+                                VLO        2       100.0
+SUB MODULES 
+               energy_manager_fixed        1       100.0
+                            
+                         TOTAL            48           
+----------------------------------------------------------------------
+Report for cell energy_manager_fixed.netlist
+     Instance path:  u_energy
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1S3BX        1       100.0
+                            FD1S3DX        4       100.0
+                           ORCALUT4       25       100.0
+                                VHI        1        50.0
+                                VLO        1        50.0
+                            
+                         TOTAL            32           

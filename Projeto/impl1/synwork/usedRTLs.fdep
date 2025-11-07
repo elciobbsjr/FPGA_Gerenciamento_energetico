@@ -1,0 +1,5 @@
+#List of actual used RTLs.
+
+File                                                                                    Type     IN_PROJECT/INCLUDED/LIBRARY
+
+"C:\Users\ResTIC16\Desktop\possivelproojeto\Arquivos\Gereciamento_energetico.sv"     verilog                      IN PROJECT

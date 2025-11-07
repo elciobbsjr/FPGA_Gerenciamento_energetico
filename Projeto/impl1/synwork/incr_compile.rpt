@@ -1,0 +1,39 @@
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: V-2023.09L-2
+Install: C:\lscc\diamond\3.14\synpbase
+OS: Windows 10 or later
+Hostname: BRMASOFT50
+
+Implementation : impl1
+Synopsys HDL compiler and linker, Version comp202309synp1, Build 349R, Built Sep 17 2024 08:16:26, @
+
+Modified Files: 1
+FID:  path (prevtimestamp, timestamp)
+6        C:\Users\ResTIC16\Desktop\possivelproojeto\Arquivos\Gereciamento_energetico.sv (2025-10-31 01:06:54, 2025-10-31 13:58:15)
+
+*******************************************************************
+Modules that may have changed as a result of file changes: 2
+MID:  lib.cell.view
+1        work.energy_manager_fixed.verilog may have changed because the following files changed:
+                        C:\Users\ResTIC16\Desktop\possivelproojeto\Arquivos\Gereciamento_energetico.sv (2025-10-31 01:06:54, 2025-10-31 13:58:15) <-- (module definition)
+2        work.energy_system_all_in_one.verilog may have changed because the following files changed:
+                        C:\Users\ResTIC16\Desktop\possivelproojeto\Arquivos\Gereciamento_energetico.sv (2025-10-31 01:06:54, 2025-10-31 13:58:15) <-- (module definition)
+
+*******************************************************************
+Unmodified files: 5
+FID:  path (timestamp)
+1        C:\lscc\diamond\3.14\synpbase\lib\lucent\ecp5u.v (2024-08-22 17:48:19)
+2        C:\lscc\diamond\3.14\synpbase\lib\lucent\pmi_def.v (2024-09-23 20:33:10)
+3        C:\lscc\diamond\3.14\synpbase\lib\vlog\hypermods.v (2024-09-23 20:33:35)
+4        C:\lscc\diamond\3.14\synpbase\lib\vlog\scemi_objects.v (2024-09-23 20:33:35)
+5        C:\lscc\diamond\3.14\synpbase\lib\vlog\scemi_pipes.svh (2024-09-23 20:33:35)
+
+*******************************************************************
+Unchanged modules: 0
+MID:  lib.cell.view
